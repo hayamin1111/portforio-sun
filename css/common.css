@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/*********** reset **********/
+html
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+li,
+form,
+figure,
+figcaption,
+dl,
+dt,
+dd,
+label,
+table,
+article,
+footer,
+header,
+nav,
+section,
+time {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5em;
+  font-family: 'Kosugi', 游ゴシック, YuGothic,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+  line-height:1;
+  letter-spacing: .1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Space Mono';
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  -mos-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+/*************************************
+               header
+**************************************/
+/*************************************
+               /header
+**************************************/
+/*************************************
+               main
+**************************************/
+/*************************************
+               /main
+**************************************/
+/*************************************
+               footer
+**************************************/
+/*************************************
+               /footer
+**************************************/
+/**************************************
+                767px以上
+**************************************/
+/**************************************
+             1024px以上
+**************************************/
+@media (min-width: 1024px) {
+  .pc_hide {
+    display: none;
+  }
+
+  .sp_hide {
+    display: block;
+  }
+
+}

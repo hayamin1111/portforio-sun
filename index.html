@@ -21,24 +21,75 @@
 ----------------------------->
   <main id="main" class="main">
 <!-- アニメーション -->
-    <section id="anim" class="sec_anim section">
+    <section id="anim" class="sec-anim section">
+      <div class="anim_1">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="anim_2"></div>
+      <div class="anim_3">
+        <div class="wrap">
+          <div>
+            <span>早</span>
+          </div>
+          <div>
+            <span>川</span>
+          </div>
+          <div>
+            <span>恵</span>
+          </div>
+          <div>
+            <span>美</span>
+          </div>
+        </div>
+        <div class="sub__ttl">ポートフォリオ</div>
+        <div class="enter" id="js-enter_btn">ENTER</div>
+      </div>
     </section>
 <!-- /アニメーション -->
 <!-- ホーム -->
     <section id="home" class="section sec-home">
-      <h1 class="site__ttl js-home_btn">
-        <span>Haya</span>
-        <span>kawa</span>
-      </h1>
+      <div class="link">
+        <h1 class="site__ttl  js-home_btn">
+          <a href="index.html">
+            <span>Haya</span>
+            <span>kawa</span>
+          </a>
+        </h1>
+        <span>
+          <a href="https://codepen.io/hayamine01" target="_blank">
+            <img src="img/codepen.png" alt="コードペンのアイコン">
+          </a>
+        </span>
+        <span>
+          <a href="https://github.com/hayamin1111" target="_blank"> 
+            <img src="img/github.png" alt="githubのアイコン">
+          </a>
+        </span>
+      </div> <!-- /link -->
       <div class="home__container sec__container">
         <h2 class="home__ttl sec__ttl">
           <span>MENU</span>
         </h2>
         <nav class="home__gNav">
           <ul class="gNav__list">
-            <li class="js-works_btn">ワークス</li>
-            <li class="js-prof_btn">プロフィール</li>
-            <li class="js-contact_btn">コンタクト</li>
+            <li class="js-works_btn"><a href="works.html">ワークス</a></li>
+            <li class="js-prof_btn"><a href="profile.html">プロフィール</a></li>
+            <li class="js-contact_btn"><a href="contact.html">コンタクト</a></li>
           </ul>
         </nav>
       </div>  <!-- home__container -->
@@ -49,194 +100,6 @@
       <!-- /四隅の四角 -->
     </section>
 <!-- /ホーム -->
-<!-- ワークス -->
-    <section id="works" class="sec-works section">
-      <h1 class="site__ttl  js-home_btn">
-        <span>Haya</span>
-        <span>kawa</span>
-      </h1>
-      <nav class="gNav">
-        <ul class="gNav__list">
-          <li class="js-prof_btn">プロフィール</li>
-          <li class="js-contact_btn">コンタクト</li>
-        </ul>
-      </nav>
-      <div class="works__container sec__container">
-        <h2 class="works__ttl sec__ttl">
-          <span>WORKS</span>
-        </h2>
-        <div class="wrapper">
-          <h3 class="cnts__ttl">
-            <span>
-              Webサイト・LP</h3>
-            </span>
-          <div class="works__wrapper">
-<!-- work01 -->
-            <div class="work__box">
-              <a href="#">
-                <img src="img/work-ltd.png" alt="コーポレート風サイトのスクリーンショット">
-                <div class="work__txt">
-                  <p>コーポレートサイト風LP</p>
-                  <p>制作期間：３日（デザイン込み）</p>
-                  <p>PCサイズのみ</p>
-                  <time datetime="2019-09-15">2019/09/15</time>
-                </div>
-              </a>
-            </div> <!-- work__box -->
-  <!-- work02 -->
-            <div class="work__box">
-              <a href="#">
-                <img src="img/work-planter.jpg" alt="架空の植物店サイトのスクリーンショット">
-                <div class="work__txt">
-                  <p>オリジナルLP</p>
-                  <p>制作期間：３日（デザイン込み）</p>
-                  <p>レスポンシブWebデザイン</p>
-                  <time datetime="2019-08-26">2019/08/26</time>
-                </div>
-              </a>
-            </div> <!-- work__box -->
-  <!-- work03 -->
-            <div class="work__box">
-              <a href="#">
-                <img src="img/work-portfolio.png" alt="ポートフォリオサイトのスクリーンショット">
-                <div class="work__txt">
-                  <p>前ポートフォリオサイト</p>
-                  <p>制作期間：４日（デザイン込み）</p>
-                  <p>レスポンシブWebデザイン</p>
-                  <time datetime="2019-09-05">2019/09/05</time>
-                </div>
-              </a>
-            </div> <!-- work__box -->
-  <!-- work04 -->
-            <div class="work__box">
-              <a href="#">
-                <img src="img/work-hbooks.png" alt="既存サイトを模写したサイトのスクリーンショット">
-                <div class="work__txt">
-                  <p>既存サイトの模写</p>
-                  <p>制作期間：３日</p>
-                  <p>レスポンシブWebデザイン</p>
-                  <time datetime="2019-08-20">2019/08/20</time>
-                </div>
-              </a>
-            </div> <!-- work__box -->
-          </div> <!-- /works__wrapper  -->
-          <h3 class="cnts__ttl">
-            <span>
-              アニメーション
-            </span>
-          </h3>
-          <!-- work05 -->
-          <div class="works__wrapper">
-            <div class="work__box">
-                <a href="#">
-                  <img src="img/work_squ.png" alt="玉のアニメーションのスクリーンショット">
-                  <div class="work__txt">
-                      <p>CSSアニメーション</p>
-                      <p>制作時間：２時間</p>
-                      <p>CodePenにて2000PVを記録</p>
-                      <time datetime="2019-09-03">2019/09/03</time>
-                  </div>
-                </a>
-              </div> <!-- work__box -->
-            <div class="work__box">
-                <a href="#">
-                  <img src="img/work_wabi.png" alt="線のアニメーションのスクリーンショット">
-                  <div class="work__txt">
-                    <p>anime.jsとCSSで制作</p>
-                    <p>制作時間：3.5時間(デザイン込み)</p>
-                    <time datetime="2019-09-20">2019/09/20</time>
-                  </div>
-                </a>
-              </div> <!-- work__box -->
-          </div> <!-- /works__wrapper  -->
-        </div> <!-- /wrapper -->
-      </div>  <!-- works__container -->
-      <div class="works__bg sec__bg"></div>
-      <!-- 隅の四角 -->
-      <div class="corner">
-      </div> <!-- /corner -->
-      <!-- /隅の四角 -->
-    </section>
-<!-- /ワークス -->
-<!-- プロフィール -->
-    <section id="prof" class="section sec-prof">
-      <h1 class="site__ttl  js-home_btn">
-        <span>Haya</span>
-        <span>kawa</span>
-      </h1>
-      <nav class="gNav">
-        <ul class="gNav__list">
-          <li class="js-works_btn">ワークス</li>
-          <li class="js-contact_btn">コンタクト</li>
-        </ul>
-      </nav>
-      <div class="prof__container sec__container">
-        <h2 class="prof__ttl sec__ttl">
-          <span>PROFILE</span>
-        </h2>
-        <div class="prof__wrapper  wrapper">
-          <h3 class="cnts__ttl">私について</h3>
-          <p>一度決めたら突っ走る、猪突猛進</p>
-          <table>
-            <tr>
-              <th>名前</th>
-              <td>早川 恵美</td>
-            </tr>
-            <tr>
-              <th>好きなこと</th>
-              <td>ミステリー小説・筋トレ（現在3キロ減）
-              </td>
-            </tr>
-            <tr>
-              <th>得意なこと</th>
-              <td>細かい作業・</td>
-            </tr>
-            <tr>
-              <th>苦手なこと</th>
-              <td>一度決めたら突っ走る、猪突猛進</td>
-            </tr>
-            <tr>
-              <th>一言</th>
-              <td>真面目が一番の取り柄です</td>
-            </tr>
-          </table>
-        </div> <!-- /prof__wrap -->
-      </div>  <!-- prof__container -->
-      <div class="prof__bg sec__bg"></div>
-      <!-- 四隅の四角 -->
-      <div class="corner">
-      </div> <!-- /corner -->
-      <!-- /四隅の四角 -->
-    </section>
-<!-- /プロフィール -->
-<!-- コンタクト -->
-    <section id="contact" class="section sec-contact">
-      <h1 class="site__ttl  js-home_btn">
-        <span>Haya</span>
-        <span>kawa</span>
-      </h1>
-      <nav class="gNav">
-        <ul class="gNav__list">
-          <li class="js-works_btn">ワークス</li>
-          <li class="js-prof_btn">プロフィール</li>
-        </ul>
-      </nav>
-      <div class="prof__container sec__container">
-        <h2 class="prof__ttl sec__ttl">
-          <span>CONTACT</span>
-        </h2>
-        <div class="prof__wrapper wrapper">
-          <!-- <h3 class="cnts__ttl">私について</h3>
-          <p>一度決めたら突っ走る、猪突猛進</p> -->
-        </div> <!-- /prof__wrap -->
-      </div>  <!-- prof__container -->
-      <div class="prof__bg sec__bg"></div>
-      <!-- 四隅の四角 -->
-      <div class="corner">
-      </div> <!-- /corner -->
-      <!-- /四隅の四角 -->
-    </section>
-<!-- /コンタクト -->
   </main>
 <!---------------------------
             //main
@@ -250,7 +113,7 @@
 <!---------------------------
             /footer
 ----------------------------->
-    <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
-  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js" integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
 </html>

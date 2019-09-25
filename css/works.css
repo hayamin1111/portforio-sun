@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/*************************************
+               main
+**************************************/
+.main {
+  margin: 0 10.666%;
+}
+
+.works_desc {
+  margin-bottom: 56px;
+}
+
+.works_ttl {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  padding: 8px 24px;
+  color: #696969;
+}  
+
+.works_ttl::after {
+  position: absolute;
+  left: 0;;
+  width: 100%;
+  height: 2px;
+  background: #3893aa;
+  content: '';
+}
+
+.works_ttl::after {
+  bottom: 0;
+}
+
+.works_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work_box {
+  width: 100%;
+  height: auto;
+  padding: 2.133%;
+  box-shadow: 0 1px 10px #b3b3b3;
+}
+
+.work_box:not(:last-child) {
+  margin-bottom: 10.666%;
+}
+
+.work_box:last-child {
+  margin-bottom: 14.933%;
+}
+
+.work_box img {
+  width: 100%;
+  vertical-align: bottom;
+  box-shadow: 0 0 3px#e7e7e7;
+}
+
+.work_desc {
+  padding: 4.266%;
+  height: auto;
+}
+
+.work_desc dl {
+  display: block;
+}
+
+.work_desc dt {
+  color: #555;
+}
+
+.work_desc dd {
+  font-size: 1.2rem;
+}
+
+.work_desc time {
+  display: block;
+  font-size: 1.1rem;
+  padding-top: 24px;
+}
+/* ----------------------
+   codepen
+^--------------------- */
+.codepen {
+  width: 100%;
+  height: auto;
+}
+
+.page-top {
+  margin-bottom: 32px;
+}
+/*************************************
+               /main
+**************************************/
+/**************************************
+                768px以上
+**************************************/
+@media (min-width: 768px) {
+  .main {
+    margin: 0 14.58%;
+  }
+
+  .works_desc {
+    text-align: center;
+  }
+
+  .work_box {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .work_box:last-child {
+    margin-bottom: 10.666%;
+  }
+
+  .work_box:nth-child(even) {
+    margin-left: 32px;
+  }
+  
+  .work_box img {
+    width: 100%; 
+  } 
+}
+/**************************************
+             1024px以上
+**************************************/
+@media (min-width: 1024px) {
+  .main {
+    max-width: 768px;
+    margin: auto;
+  }
+
+  .work_box {
+    width: calc((100% - 56px) / 2);
+  }
+
+  .work_box:nth-child(even) {
+    margin-left: 56px;
+  }
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/*************************************
+               main
+**************************************/
+.main {
+  margin: 0 8.533%;
+}
+
+.contact_desc {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.page-top {
+  margin-bottom: 32px;
+}
+
+/**************************************
+                767px以上
+**************************************/
+@media (min-width: 767px) {
+  .contact_desc {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+}
+/**************************************
+             1024px以上
+**************************************/
+@media (min-width: 1024px) {
+  .main {
+    margin: 0 12.5%;
+}
