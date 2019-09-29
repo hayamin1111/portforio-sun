@@ -250,7 +250,7 @@ button,[type="button"],
       display: inline-block;
       width: 40%;
       background:#fff4b3;
-      border-radius: 30px;
+      border-radius: 50px;
       font-size: 1.3rem;
       font-weight: bold;
       text-align: center;
@@ -265,7 +265,7 @@ button,[type="button"],
         width: 100%;
         height: 100%;
         padding: 11px 0;
-        border-radius: 30px;
+        border-radius: 50px;
 
         @include tab {
           padding: 16px 0;
@@ -400,14 +400,26 @@ button,[type="button"],
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: -100%;
-    left: calc((100vw - 48vw) / 2);
-    width: 48vw;
+    bottom: -90%;
+    left: calc((100vw - 60vw) / 2);
+    width: 60vw;
     height: 20vw;
+    @include tab {
+      left: calc((100vw - 48vw) / 2);
+      width: 48vw;
+      bottom: -100%;
+    }
+    @include pc {
+      bottom: -105%;
+      }
 
     div{
-      width: 9vw;
-      height: 9vw;
+      width: 15vw;
+      height: 15vw;
+      @include tab {
+        width: 9vw;
+        height: 9vw;
+      }
       
       span {
         display: block;
@@ -415,22 +427,31 @@ button,[type="button"],
         height: 100%;
         background: #f48738;
         border-radius: 50%;
-        font-size: 6vw;
+        font-size: 9vw;
         color: #fff;
         text-align: center;
-        line-height: 9vw;
+        line-height: 15vw;
+        @include tab {
+          font-size: 6vw;
+          line-height: 9vw;
+        }
       }
     }
   } 
   .sub__ttl {
     position: absolute;
     bottom: -100%;
+    left: calc((100vw - 7vw * 7) / 2);
+    font-size: 7vw;
+    
+    @include tab {
     left: calc((100vw - 4vw * 7) / 2);
     font-size: 4vw;
+    }
   }
   .enter {
     position: absolute;
-    bottom: 10vh;
+    bottom: 22vh;
     left: 50%;
     transform: translateX(-50%);
     padding: 16px 40px;
@@ -440,9 +461,14 @@ button,[type="button"],
     color: #fff;
     opacity: 0;
     box-shadow: 0 1px 3px 3px #d1d1d1;
+    transition: .5;
+    @include tab {
+      bottom: 18vh;
+    }
 
     &:hover {
       cursor: pointer;
+      opacity: .8;
       
     }
   }
@@ -490,7 +516,7 @@ button,[type="button"],
   font-size: 1.3rem;
   a{
     color: #fff;
-    transition: .3s;
+    transition: .4s;
     &:hover {
       color: #4fac9f;
     }
@@ -535,16 +561,16 @@ button,[type="button"],
     transform: translate(-50%, -50%);
     
     @include tab {
-      top: 53%;
+      top: 56%;
     }
     @include pc {
-      top: 56%;
+      top: 60%;
     }
 
     li {
       
       background:#fff4b3;
-      border-radius: 30px;
+      border-radius: 50px;
       font-size: 1.7rem;
       font-weight: bold;
       box-shadow: 0 1px 1px 1px #f0f0f0;
@@ -559,12 +585,25 @@ button,[type="button"],
           padding: 18px 0 18px 32px;
           border-radius: 50px;
         }
-        @include pc {
-          padding: 22px 0 22px 32px;
-        }
+        // @include pc {
+          // padding: 18px 0 18px 32px;
+        // }
         &:hover {
           background: #4fac9f;
           color: #fff;
+          border-radius: 50px;
+        }
+        img {
+          width: 18px;
+          margin-right: 8px;
+          vertical-align: bottom;
+          @include tab {
+            width: 20px;
+          }
+          @include pc {
+            width: 24px;
+            margin-right: 10px;
+          }
         }
       }
 

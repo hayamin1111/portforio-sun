@@ -47,7 +47,7 @@ anime({ //一つになるボール
       targets: '.anim_3 .wrap div',
       delay: function(el, i, l) { return i * 100},
       translateY: [
-        {value: '-145vh', duration: 2000},
+        {value: '-150vh', duration: 2000},
       ],
       scale: [
         {value: .5},
@@ -61,7 +61,7 @@ anime({ //サブタイトル
   targets: '.sub__ttl',
   delay: 5800,
   translateY: [
-    {value: '-140vh', duration: 2300},
+    {value: '-150vh', duration: 2300},
   ],
   scale: [
     {value: .5},
